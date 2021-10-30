@@ -1,0 +1,19 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "pyonize"
+authors = [{name = "Bilal Alpaslan", email = "m.bilal.alpaslan@gmail.com"}]
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development",
+    "Programming Language :: Python :: 3",
+]
+dynamic = ["version", "description"]
+
+[project.urls]
+Home = "https://github.com/BilalAlpaslan/Pyonize"
