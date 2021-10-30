@@ -1,5 +1,5 @@
 
-from pyon import pyonize, Pyon
+from pyonize import pyonize, Pyon
 
 def test_pyonize():
     pyon = pyonize({"id":1,"name":"bilal","job":{"id":1,"title":"CTO"}})

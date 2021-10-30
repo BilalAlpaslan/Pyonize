@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pyonize"
-version = "0.1.1"
+version = "0.1.2.1"
 description = "convert json|dict to python object"
 readme = "README.md"
 homepage = "https://github.com/BilalAlpaslan/Pyonize"

@@ -1,4 +1,5 @@
-# Pyon
+# Pyonize
+
 convert json|dict to python object
 
 ## Setup
@@ -9,7 +10,7 @@ pip install pyonize
 
 ## Example
 ```py
-from pyon import pyonize
+from pyonize import pyonize
 
 
 def example():
