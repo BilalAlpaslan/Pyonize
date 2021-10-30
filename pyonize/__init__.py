@@ -3,7 +3,7 @@
 __version__ = "0.1.1"
 
 
-from .main import Pyon, pyonize
+from .__main__ import Pyon, pyonize
 
 __all__ = [
     "Pyon",
