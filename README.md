@@ -1,7 +1,13 @@
 # Pyon
 convert json|dict to python object
 
+## Setup
 
+```
+pip install pyonize
+```
+
+## Example
 ```py
 from pyon import pyonize
 
@@ -18,9 +24,6 @@ def example():
 example()
 ```
 
+<br>
+<hr>
 
-this project not available in PyPI now (coming soon). if you want add this library your workspace clone this repo and run in this folder:
-
-```
-pip install .
-```

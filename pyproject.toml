@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pyonize"
+version = "0.1.1"
+description = "convert json|dict to python object"
+readme = "README.md"
+homepage = "https://github.com/BilalAlpaslan/Pyonize"
+authors = ["Bilal Alpaslan <m.bilal.alpaslan@gmail.com>"]
+license = "LICENSE"
+packages = [{include = "pyonize"}]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+
+[tool.poetry.scripts]
+realpython = "pyonize.__main__:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
