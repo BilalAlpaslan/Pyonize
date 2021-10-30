@@ -19,24 +19,26 @@ example()
 ```
 
 
+<br>
 this project not available in PyPI now (coming soon). if you want add this library your workspace clone this repo and watch a this steps:
 
-### **First**
+### -**First**
 
 Download wheel and setuptools libraries
 
 `pip install wheel setuptools`
 
-### **After** 
+### -**After** 
 
 Make sure you are in the same folder as setup.py
 
 `python setup.py bdist_wheel --universal`
 
-### **Finally**
+### -**Finally**
 
 Stay in the same directory and copy the name of the .whl file in the dist folder
 
 ``pip install ./dist/copied file name`` 
 
 Actually the filename is by default: "pyon-0.1.0-py2.py3-none-any.whl"
+<br>
