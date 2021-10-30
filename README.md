@@ -21,4 +21,6 @@ example()
 
 this project not available in PyPI now (coming soon). if you want add this library your workspace clone this repo and run in this folder:
 
-```pip install .```
+```
+pip install .
+```
