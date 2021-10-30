@@ -1,2 +1,3 @@
-version 0.1.0
-    -project initialize
+<h2>version 0.1.0</h2>
+<hr>
+-project initialize
