@@ -1,0 +1,1 @@
+py -m poetry publish
