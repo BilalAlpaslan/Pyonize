@@ -1,11 +1,12 @@
 """ convert json|dict to python object """
 
-__version__ = "0.1.2.1"
+__version__ = "0.1.3"
 
 
-from .__main__ import Pyon, pyonize
+from .__main__ import pyonize, Pyon, PyonList
 
 __all__ = [
+    "pyonize",
     "Pyon",
-    "pyonize"
+    "PyonList"
 ]

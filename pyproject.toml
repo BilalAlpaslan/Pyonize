@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pyonize"
-version = "0.1.2.1"
+version = "0.1.3"
 description = "convert json|dict to python object"
 readme = "README.md"
 homepage = "https://github.com/BilalAlpaslan/Pyonize"
@@ -10,9 +10,6 @@ packages = [{include = "pyonize"}]
 
 [tool.poetry.dependencies]
 python = ">=3.7"
-
-[tool.poetry.scripts]
-realpython = "pyonize.__main__:main"
 
 [build-system]
 requires = ["poetry>=0.12"]
