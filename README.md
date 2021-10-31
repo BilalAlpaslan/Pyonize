@@ -8,21 +8,35 @@ convert json|dict to python object
 pip install pyonize
 ```
 
-## Example
+## Examples
 ```py
 from pyonize import pyonize
 
+deneme = pyonize({"id": 1, "name": "jhon", "job": {"id": 1, "title": "CTO"}, "list": [
+                1, 2, 3], "dictlist": [{"name": "foo"}, {"name": "bar"}]})
 
-def example():
-    
-    deneme = pyonize({"id":1,"name":"bilal","job":{"id":1,"title":"CTO"}})
+print(deneme.name)
+print(deneme.job)
+print(deneme.job.title)
+```
 
-    print(type(deneme))
-    print(deneme.name)
-    print(deneme.job)
-    print(deneme.job.title)
+##
 
-example()
+```py
+from pyonize import Pyon
+
+class Foo(Pyon):
+    def bar(self):
+        ...
+
+data = {"id": 1, "name": "jhon", "job": {"id": 1, "title": "CTO"},
+    "list": [1, 2, 3], "dictlist": [{"name": "foo"}, {"name": "bar"}]}
+
+foo = Foo(data)
+
+print(foo.id)
+print(foo.dictlist[1].name)
+
 ```
 
 <br>
