@@ -55,9 +55,9 @@ class PyonList:
         return self.creation_string_data
 
 
-def pyonize(data: dict) -> Union[Pyon, PyonList]:
+def pyonize(data: Union[dict, list]) -> Union[Pyon, PyonList]:
     if isinstance(data, dict):
         return Pyon(data)
-    if isinstance(data, dict):
+    if isinstance(data, list):
         return PyonList(data)
     raise Warning(f"only dict/list object is pyonizeable :{data}")
