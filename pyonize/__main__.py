@@ -11,12 +11,12 @@ class Pyon:
         self.convert_to_obj(data)
 
     def convert_to_obj(self, data: dict):
-        self.creation_string_data = str(data)
+        self.creation_string_data = f"{data}"
 
         for i, j in data.items():
 
             if not isinstance(i, str):
-                raise Warning(f"ops, ı m not understand this object :{i}")
+                raise Warning("Ops, i did not understand this object :{object}".format(object=i))
 
             if isinstance(j, dict):
                 new_pyon = pyonize(j)
@@ -36,7 +36,7 @@ class PyonList:
         self.convert_to_obj(data)
 
     def convert_to_obj(self, data: dict):
-        self.creation_string_data = str(data)
+        self.creation_string_data = f"{data}"
         self.pyon_list = []
         for i in data:
             if isinstance(i, dict):
@@ -49,7 +49,7 @@ class PyonList:
     def __getitem__(self, index):
         if isinstance(index, int):
             return self.pyon_list[index]
-        raise Warning(f"only int not :{index}")
+        raise Warning("Only int not :{current_index}".format(current_index=index)
 
     def __str__(self) -> str:
         return self.creation_string_data
@@ -60,4 +60,4 @@ def pyonize(data: dict) -> Union[Pyon, PyonList]:
         return Pyon(data)
     if isinstance(data, dict):
         return PyonList(data)
-    raise Warning(f"only dict/list object is pyonizeable :{data}")
+    raise Warning("Only dict/list object is pyonizeable :{current_data}".format(current_data=data))
