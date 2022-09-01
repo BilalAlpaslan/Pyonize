@@ -49,7 +49,7 @@ class PyonList:
     def __getitem__(self, index):
         if isinstance(index, int):
             return self.pyon_list[index]
-        raise Warning("Only int not :{current_index}".format(current_index=index)
+        raise Warning("Only int not :{current_index}".format(current_index=index))
 
     def __str__(self) -> str:
         return self.creation_string_data
